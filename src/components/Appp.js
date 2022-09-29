@@ -10,7 +10,7 @@ const Appp = () => (
   <section id='todo'>
     <BrowserRouter>
       <Routes>
-        <Route index element={<ToDoList />} />
+        <Route index element={<ToDoList tasks={initialData} />} />
         <Route path='/:filter' element={<ToDoList tasks={initialData} />} />
         <Route path='add-task' element={<AddTask />} />
         {/* <Route path='/:filter?' element={<AddTask />} /> */}
